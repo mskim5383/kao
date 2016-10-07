@@ -29,7 +29,7 @@ def contact(request):
 
 def webcontent(request):
     result = {'status': 'fail'}
-    if request.method == 'POST':
+    if request.user.is_staff and request.method == 'POST':
         name = request.POST.get('name', '')
         content = request.POST.get('content', '')
         if name != '':
