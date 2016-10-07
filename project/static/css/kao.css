@@ -174,3 +174,37 @@ hr {
   margin-bottom:40px;
   margin-right:30px;
 }
+
+#about_menu {
+  font-size:20px;
+  margin-bottom:20px;
+  margin-left:10px;
+}
+
+.about_history_header{
+  font-size:30px;
+  margin-bottom:40px;
+  margin-right:30px;
+}
+
+#about_history_staff_year{
+  margin-top:50px;
+  font-size:30px;
+  margin-bottom:35px;
+  margin-left:315px;
+}
+
+.staff_info_role {
+  font-size:20px;
+  margin-bottom:30px;
+  margin-right: 10px;
+  margin-left:315px;
+}
+
+.staff_info_name {
+  font-size:20px;
+  margin-bottom:30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
