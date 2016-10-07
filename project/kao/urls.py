@@ -8,6 +8,7 @@ import os
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^session/', include('apps.session.urls')),
+    url(r'^private_web/', include('apps.private_web.urls')),
 
     # Upload Root
     url(r'^upload/(?P<path>.*)$', 'django.views.static.serve',
