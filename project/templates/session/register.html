@@ -1,4 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 session_register
+{{ error }}
+<form action="./" method="POST">
+    {% csrf_token %}
+    {{ user_form }}
+    <input type="repassword" class="form-control" name="repassword" placeholder="Re-enter password">
+    {{ user_profile_form }}
+    <button type="submit">Register</button>
+</form>
 {% endblock %}

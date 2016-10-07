@@ -1,4 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 session_login
+{{ error }}
+<form method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="next" value"{{ next }}">
+    <input type="username" class="form-control" name="username" placeholder="Username">
+    <input type="password" class="form-control" name="password" placeholder="Password">
+    <button type="submit">Login</button>
+</form>
+
 {% endblock %}
