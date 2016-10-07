@@ -1,3 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <input type="content" name="content" placeholder="content">
+    <button type="submit">submit</button>
+</form>
+{% for board_comment in board_comment_list%}
+<div>
+  <p>{{ board_comment.userprofile.name }}</p>
+  <p>{{ board_comment.content }}</p>
+  <p>{{ board_comment.created_time }}</p>
+</div>
+{% endfor %}
 {% endblock %}
