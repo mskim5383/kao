@@ -1,5 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+
 from apps.public_web.models import WebContent
+
+import json
 
 def entrance(request):
     model_dict = _model_load('entrance')
@@ -22,6 +26,18 @@ def board(request):
 
 def contact(request):
     return render(request, 'public_web/contact.html')
+
+def webcontent(request):
+    result = {'status': 'fail'}
+    if request.method == 'POST':
+        name = request.POST.get('name', '')
+        content = request.POST.get('content', '')
+        if name != '':
+            web_content = _model_save(name, content)
+            result['status'] = 'success'
+            result['content'] = web_content.content
+    return HttpResponse(json.dumps(result), content_type='application/json')
+
 
 def _model_load(*args):
     model_dict = {}

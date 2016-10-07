@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^media/$', 'apps.public_web.views.media'),
     url(r'^board/$', 'apps.public_web.views.main'),
     url(r'^contact/$', 'apps.public_web.views.contact'),
+    url(r'^webcontent/$', 'apps.public_web.views.webcontent'),
     url(r'^$', 'apps.public_web.views.entrance'),
 ]
