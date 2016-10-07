@@ -13,7 +13,7 @@
         <script src="/static/js/kao.js"></script>
         {% block js %}{% endblock %}
     </head>
-    <body class="dark-theme" style='align:center; width:1200; margin-top:20px'>
+    <body class="dark-theme" style='width:1200; margin-top:20px'>
         {% if request.user.is_staff %}
         {% csrf_token %}
         <div class="staff"></div>
