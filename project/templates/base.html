@@ -13,8 +13,10 @@
         {% block js %}{% endblock %}
     </head>
     <body>
+        {% if request.user.is_staff %}
         {% csrf_token %}
         <div class="staff"></div>
+        {% endif %}
         {% block content %}
         {% endblock %}
     </body>
