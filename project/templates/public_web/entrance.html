@@ -1,55 +1,57 @@
-{% extends "base.html" %}
-{% block content %}
-<!DOCTYPE html>
-<html>
-<body>
-
-<div align= "center" style="color:black">
-   <p>
-   2015
-   <br>
-   <span>president: </span>
-   <span>junsulee</span>
-   <br>
-   <span>concertmaster: </span>
-   <span>yuji rho</span>
-   </p>
-   <br>
-   <p>
-   2015
-   <br>
-   <span>president: </span>
-   <span>junsulee</span>
-   <br>
-   <span>concertmaster: </span>
-   <span>yuji rho</span>
-   </p>
-   <br>
-   <p>
-   2015
-   <br>
-   <span>president: </span>
-   <span>junsulee</span>
-   <br>
-   <span>concertmaster: </span>
-   <span>yuji rho</span>
-   </p>
-   <br>
-   <p>
-   2015
-   <br>
-   <span>president: </span>
-   <span>junsulee</span>
-   <br>
-   <span>concertmaster: </span>
-   <span>yuji rho</span>
-   </p>
-
-</div>
-
-<!-- Se
-
-</body>
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}KAIST Orchestra{% endblock %}</title>
+        <link rel="stylesheet" href="/static/css/kao.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        {% block css %}{% endblock %}
+        <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        {% block js %}{% endblock %}
+    </head>
+    <body class="dark-theme" style='align:center;'>
+        <div class='dark-theme'>
+            <header id="top" class="entrance_header">
+                <div class="text-vertical-center" style="height:800px;">
+                        <h1> KAIST ORCHESTRA </h1>
+                        <h3> since 1992</h3>
+                        <a href="/main" class="btn btn-dark btn-lg">Start KAO</a>
+                </div>
+                <footer>
+	                <div class="container">
+	                    <div class="row">
+	                        <div class="col-lg-4">
+	                            <span class="copyright">Copyright &copy; KAO 2016</span>
+	                        </div>
+	                        <div class="col-lg-4">
+	                            <ul class="list-inline social-buttons">
+	                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+	                                </li>
+	                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+	                                </li>
+	                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                        <div class="col-lg-4">
+	                            <ul class="list-inline quicklinks">
+	                                <li>
+	                                    <a href="#" id = "char_static_white">Privacy Policy</a>
+	                                </li>
+	                                <li>
+	                                    <a href="#" id = "char_static_white">Terms of Use</a>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	            	</footer>
+            </header>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
 </html>
 
-{% endblock %}
