@@ -1,5 +1,9 @@
 KAO-web Naming Specification
 
+Minsoo Kim
+Seohui Bae
+Jaemin Shin
+
 1. URL_PATTERN
 
 /
