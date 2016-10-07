@@ -61,7 +61,7 @@ hr#bar_white {
   margin-top: 80px;
   width:100%;
   height:775px;
-  background:url(../image/bg_realfinal.png) no-repeat scroll center center / cover; 
+  background:url(../image/bg_realfinal.png) no-repeat scroll center center / cover;
 }
 
 .row{
@@ -78,20 +78,20 @@ hr#bar_white {
     -webkit-appearance: none;
     -moz-appearance: none;
     padding: 12px 48px 12px 12px;
-  
+
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
     border-radius: 200px;
-  
+
     width: 200px;
     height: 16px;
     color: #000;
     border: none;
     outline: none;
-  
+
     position: relative;
     z-index: 2;
-    background: #fff 
+    background: #fff
 }
 
 #s::-webkit-input-placeholder, #s:-moz-placeholder {
@@ -152,8 +152,8 @@ ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a
   background-color:#fed136
 }
 
-hr { 
-  border-top:1px solid #9C9C9C; 
+hr {
+  border-top:1px solid #9C9C9C;
   border-bottom:1px solid #F6F6F6;
 }
 
