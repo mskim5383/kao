@@ -13,6 +13,7 @@
         {% block js %}{% endblock %}
     </head>
     <body>
+        {% csrf_token %}
         <div class="staff"></div>
         {% block content %}
         {% endblock %}
