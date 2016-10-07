@@ -1,0 +1,70 @@
+KAO-web Naming Specification
+
+1. URL_PATTERN
+
+/
+
+/main
+
+/about
+
+	-history
+		-timeline
+		-staff
+	-conductor
+	-members
+		-curr_staff
+		-vn1
+		-vn2
+		-va
+		-vc
+		-cb
+		-fl
+		-ob
+		-cl
+		-fg
+		-tp
+		-hn
+		-tbn
+		-tb
+		-p
+	-partnership
+
+/concert
+
+/media
+
+/board
+
+/contact
+
+
+2. CSS ID PATTERN
+
+- 글씨
+
+	형식: char_앞으로 변하는지의 여부_글자 색
+
+	ex) char_(dynamic/static)_(yellow/white)
+
+
+- 선
+
+	형식: bar_선 색
+
+	ex) bar_(yellow/white)
+
+- 버튼
+
+	형식: button_투명여부_하이라이트여부_튀어나왔는지여부
+
+	ex) button_(transparent1/transparent2/transparent3)_(highlighted/nonhighlighted)_(concave/nonconcave)
+
+- 이미지
+
+	형식: image
+
+- 비디오
+
+	형식: video
+
